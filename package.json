@@ -5,6 +5,9 @@
   "description": "Retrieve colors from image or site domain",
   "version": "0.1.1",
   "main": "./lib/ctheft",
+  "bin": {
+    "csteal": "bin/csteal.js"
+  },
   "keywords": [
         "color",
         "image"
@@ -12,7 +15,7 @@
 
   "repository": {
      "type": "git",
-     "url": "git://github.com/tmpvar/jsdom.git"
+     "url": "git://github.com/dlin-me/ctheft"
   },
   "engines": {
     "node": ">= 0.8.4"
