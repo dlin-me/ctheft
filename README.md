@@ -64,7 +64,7 @@ ctheft.imgHex(pngUrl, showResult, showErr);
 ctheft comes with a executable binary 'csteal'. Running the csteal command with no parameter will show you the following hint
 
 ```
-Usage: node ./bin/csteal.js -s [site domain] -i [image url] -rgb -h
+Usage: csteal -s [site domain] -i [image url] -rgb -h
 
 Options:
   -s, --site  Website domain                              
