@@ -3,26 +3,26 @@
   "name": "ctheft",
   "homepage": "https://dlin.me",
   "description": "Retrieve colors from image or site domain",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "./lib/ctheft",
   "bin": {
     "csteal": "bin/csteal.js"
   },
   "keywords": [
-        "color",
-        "image"
-    ],
-
+    "color",
+    "image"
+  ],
   "repository": {
-     "type": "git",
-     "url": "git://github.com/dlin-me/ctheft"
+    "type": "git",
+    "url": "git://github.com/dlin-me/ctheft"
   },
   "engines": {
     "node": ">= 0.8.4"
   },
   "dependencies": {
     "png-js": "~0.1.1",
-    "request": "~2.30.0"
+    "request": "~2.30.0",
+    "optimist": "~0.6.1"
   },
   "devDependencies": {}
 }
