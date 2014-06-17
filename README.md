@@ -15,10 +15,14 @@ ctheft comes with a executable binary 'csteal', to use it you can install it as 
 npm -g install ctheft
 ```
 
+2. Test
+----
+```
+node test.js
+```
 
 
-
-2. Usage
+3. Usage
 -------
 ctheft provides 4 easy to use methods
 
@@ -58,7 +62,7 @@ ctheft.imgHex(pngUrl, showResult, showErr);
 ```
 
 
-3. Binary
+4. Binary
 ----
 
 ctheft comes with a executable binary 'csteal'. Running the csteal command with no parameter will show you the following hint
@@ -74,16 +78,18 @@ Options:
 ```
 
 
-4. Limitation
+5. Limitation
 --------
 
 - Only support PNG files on accessible URL
 - ctheft use website's favicon to get the colors. While this will work most of the time, ctheft won't work as expected if the given website does not have a favicon
 
-
-5. License
+6. License
 --------
 
-Free, as it is.
+
+Copyright (c) 2014 David Lin
+
+MIT License - http://opensource.org/licenses/mit-license.php
 
 

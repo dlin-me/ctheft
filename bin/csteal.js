@@ -2,9 +2,14 @@
 /**
  * Created by davidlin on 11/04/2014.
  */
+var ctheft, optimist, argv, scheme, type, func, target, reportFunc;
 
-var ctheft = require('../lib/ctheft');
-var optimist = require('optimist')
+ctheft = require('../lib/ctheft');
+
+/**
+ * Setting up command line options
+ */
+optimist = require('optimist')
         .usage('Usage: $0 -s [site domain] -i [image url] -rgb -h')
         .options('s', {
             alias : 'site',
@@ -22,23 +27,21 @@ var optimist = require('optimist')
             alias: 'help',
             describe: 'Show usage'
 
-        })
+        });
 
-        ;
-
-var argv = optimist.argv;
+argv = optimist.argv;
 
 if(argv.h || !argv.s && !argv.i){
-    optimist.showHelp( console.log )
+    optimist.showHelp( console.log );
     return
 }
 
-var scheme = argv.rgb ? 'Rgb':'Hex';
-var type = argv.s ? 'site':'img';
-var func  = ctheft[type+scheme];
-var target = argv.s || argv.i;
+scheme = argv.rgb ? 'Rgb':'Hex';
+type = argv.s ? 'site':'img';
+func  = ctheft[type+scheme];
+target = argv.s || argv.i;
 
 if (func){
-    var reportFunc = function(c){console.log(c);};
+    reportFunc = function(c){console.log(c);};
     func(target, reportFunc, reportFunc);
 }
